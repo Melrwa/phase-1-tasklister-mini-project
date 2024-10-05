@@ -34,4 +34,64 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+ 
+}
+li {
+  font-size: 16px;  /* Same size as the button text */
+  padding: 10px;    /* Padding for the list item */
+  display: flex;    /* Flexbox for better alignment between task text and button */
+  align-items: center;  /* Vertically align the text and button */
+  justify-content: space-between;  /* Space between the task and the button */
+  border-bottom: 1px solid #ddd;  /* Add a subtle border between tasks */
+  margin-bottom: 10px;  /* Space between task items */
+  list-style-type:none;  /* Remove bullet points */
+}
+.remove-btn {
+  font-size: 16px;  /* Match the task text size */
+  background-color: red;  /* Red background */
+  color: white;  /* White text */
+  padding: 2px 8px;  /* Match padding to ensure consistency with the task item */
+  border: none;  /* Remove the border */
+  cursor: pointer;  /* Pointer on hover */
+  font-weight: bold;  /* Bold text */
+  border-radius: 5px;  /* Rounded corners for a button */
+  transition: background-color 0.3s ease;  /* Smooth hover transition */
+}
+.remove-btn:hover {
+  background-color: darkred;  /* Darker red on hover */
+}
+ul {
+  padding-left: 0;
+}
+.priority-high {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.priority-medium {
+  color:orange;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.priority-low {
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.due-date-label {
+  margin: 0 10px;  /* Adds space between the priority and remove button */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #555;
+}
+
+.due-time-label{
+  margin: 0 10px;  /* Adds space between the priority and remove button */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #555;
+
 }
